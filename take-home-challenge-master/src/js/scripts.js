@@ -3,7 +3,7 @@
   'use strict';
 
   $(function () {
-    // Stuff goes here
+
   });
 
 })(jQuery, window, document);
