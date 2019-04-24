@@ -1,17 +1,35 @@
 @font-face {
-  font-family: "ArchiveGaramondPro";
-  src: url(../../../app/assets/fonts/ArchiveGaramondPro/ArchiveGaramondPro.woff);
+  font-family: 'ArchiveGaramondPro';
+  src: url('../fonts/ArchiveGaramondPro/ArchiveGaramondPro.eot');
+  src: url('../fonts/ArchiveGaramondPro/ArchiveGaramondPro.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ArchiveGaramondPro/ArchiveGaramondPro.woff') format('woff'),
+       url('../fonts/ArchiveGaramondPro/ArchiveGaramondPro.ttf') format('truetype'),
+       url('../fonts/ArchiveGaramondPro/ArchiveGaramondPro.svg#steagal_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
-@font-face {
-  font-family: "ArchiveGaramondPro-Bold";
-  src: url(../../../app/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.woff);
-  font-weight: bold;
-}
-@font-face {
-  font-family: "ArchiveGaramondPro-BoldItalic";
-  src: url(../../../app/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.woff);
-  font-weight: bold;
-  font-style: italic, oblique;
+
+// @font-face {
+//   font-family: "ArchiveGaramondPro";
+//   src: url("../../../app/assets/fonts/ArchiveGaramondPro/ArchiveGaramondPro.woff");
+// }
+// @font-face {
+//   font-family: "ArchiveGaramondPro-Bold";
+//   src: url(../../../app/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.woff);
+//   font-weight: bold;
+// }
+// @font-face {
+//   font-family: "ArchiveGaramondPro-BoldItalic";
+//   src: url(../../../app/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.woff);
+//   font-weight: bold;
+//   font-style: italic, oblique;
+// }
+
+html, body {
+  overflow: visible;
+  height:100%;
+  width: 100%;
 }
 
 .main {
@@ -46,7 +64,8 @@
   background-color: #ffffff;
   border-radius: 50%;
 }
-// header text
+
+// header - text
 #carousel-text{
   display: flex;
   justify-content: center;
@@ -60,7 +79,6 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 19px;
-  //height: 117px;
   text-shadow: 0px 2px 10px rgba(1, 1, 1, 0.2);
   font-family: "Montserrat";
   font-size: 19.5px;
@@ -78,13 +96,13 @@
 }
 .text-style-2 {
   margin: 0;
-  font-family: "ArchiveGaramondPro";
+  font-family: "ArchiveGaramondPro-BoldItalic";
   font-size: 59.5px;
   font-weight: bold;
   font-style: italic;
   line-height: 0.97;
 }
-
+// header - text - lines
 .carousel-text-lines {
   width: 100%;
   display: flex;
@@ -95,16 +113,14 @@
   width: 161px;
   height: 3px;
   background-color: #ffffff;
-  opacity: 0.15;
 }
 .rule-small-1 {
   margin-bottom: 275px;
 }
-
+// header - text - bottom
 #MyAWAYContest {
   display: flex;
   justify-content: center;
-  //width: 183px;
   height: 19px;
   text-shadow: 0px 2px 10px rgba(1, 1, 1, 0.2);
   font-family: "Montserrat";
@@ -134,14 +150,13 @@
   letter-spacing: 2.6px;
 }
 
-// header corner text
+// header - corner text
 .corner-text {
   position: absolute;
   top: 50px;
   right: 38px;
 }
 .sponsored-by {
-  //width: 89px;
   height: 8px;
   font-family: "Montserrat";
   font-size: 10px;
@@ -154,13 +169,133 @@
   color: #e2dfea;
 }
 .GRV_Logo_rev-2 {
-  width: 133px;
+  //width: 133px;
   height: 39px;
   object-fit: contain;
 }
 
-  @media (max-width: 460px) {
-    .carousel-indicators{
+// section 1
+#section-1 {
+  position: relative;
+  width: 100%;
+  height: 473px;
+  object-fit: contain;
+}
+.section-img {
+  width: 100%;
+}
+.section-1-content {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.row-content {
+  height: 40vw;
+}
+.how-to-Enter {
+  margin: 50px 0 37px 0;
+  height: 45px;
+  font-family: "ArchiveGaramondPro";
+  font-size: 62px;
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 0.49;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6b6e68;
+}
+
+.section-1-icon {
+ margin-bottom: 14px;
+ width: 55px;
+ height: 55px;
+}
+.section-col-line {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0;
+}
+.section-rule-small {
+  width: 161px;
+  height: 3px;
+  background-color: #6b6e68;
+}
+
+.section-1-col-style {
+  height: 129px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6b6e68;
+}
+.section-1-text-style-1 {
+  font-family: "ArchiveGaramondPro";
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 0.75;
+}
+.section-1-text-style-2 {
+  line-height: 2.86;
+  margin: 0;
+}
+.section-1-text-style-3 {
+  font-family: "Myriad Pro";
+  margin: 0;
+}
+
+.section-1-col-l {
+  padding: 0 0 0 76px;
+}
+.section-1-col-c {
+  padding: 0 51px 0 70px;
+}
+.section-1-col-r {
+  padding: 0 76px 0 0;
+}
+
+.Share-It-text p {
+  display: inline;
+  margin: 0;
+}
+
+.view-rules {
+  margin-top: 64px;
+}
+.view-rules-link {
+  width: 217px;
+  height: 15px;
+  font-family: "ArchiveGaramondPro";
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.9;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6b6e68;
+}
+.section-rule-small-2 {
+  width: 217px;
+  height: 5px;
+  background-color: #6b6e68;
+}
+
+
+@media (max-width: 460px) {
+  .carousel-indicators{
       display: flex;
-    }
   }
+}
