@@ -183,12 +183,17 @@ html, body {
 }
 .section-img {
   width: 100%;
+  clip-path: polygon(0% 0%, 41% 0%, 44% 3%, 47% 0%, 50% 10%, 53% 0%, 56% 3%, 59% 0%, 100% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  top: -60px;
+  z-index: 1;
 }
 .section-1-content {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .row {
   width: 100%;
